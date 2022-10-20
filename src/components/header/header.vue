@@ -1,5 +1,10 @@
 <template>
-    <header>这是导航栏</header>
+    <header>
+        <div class="logo">logo</div>
+        <ul>
+            <li>about</li>
+        </ul>
+    </header>
 </template>        
 <style lang="scss" scoped>
 header{
