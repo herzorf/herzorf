@@ -5,13 +5,13 @@
                 <router-link to="about">about</router-link>
             </li>
         </ul>
-        <div class="logo">logo</div>
+        <img :src="Logo" alt="">
         <Social />
     </header>
 </template>     
 <script lang="ts" setup>
 import Social from './components/social/social.vue';
-
+import Logo from "@/assets/logo.png"
 </script>   
 <style lang="scss" scoped>
 header{
@@ -19,5 +19,10 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    img{
+        width: 150px;
+        height: 150px;
+    }
 }
 </style>
