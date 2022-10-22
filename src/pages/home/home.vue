@@ -1,7 +1,10 @@
 <template>
     <div>
         <Header />
-        <h1>home</h1>
+        <div class="personalInfo">
+            <h1>Herzorf</h1>
+            <h6>一个web开发工程师</h6>
+        </div>
     </div>
 </template>
 
