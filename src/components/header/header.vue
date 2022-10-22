@@ -5,7 +5,7 @@
                 <router-link to="about">about</router-link>
             </li>
         </ul>
-        <router-link to="/"><img :src="Logo" alt="" /></router-link>
+        <router-link to="/"><img :src="Logo" alt="logo" /></router-link>
         <Social />
     </header>
 </template>     
