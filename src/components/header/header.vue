@@ -5,7 +5,7 @@
                 <router-link to="about">about</router-link>
             </li>
         </ul>
-        <img :src="Logo" alt="">
+        <router-link to="/"><img :src="Logo" alt="" /></router-link>
         <Social />
     </header>
 </template>     
@@ -17,7 +17,7 @@ import Logo from "@/assets/logo.png"
 header{
     border: 1px solid red;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     img{

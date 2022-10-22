@@ -12,7 +12,7 @@
 
 <style scoped>
 .wrapper{
-  width: 80%;
+  width: 90%;
   min-height: 100vh;
   margin: 0 auto;
 }
