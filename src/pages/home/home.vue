@@ -6,7 +6,12 @@
             <h1>base in shanghai</h1>
         </section>
         <section class="personalData">
-            <div class="left"></div>
+            <div class="left">
+                <PersonalDataItem>
+                    <template #title>title</template>
+                    <template #info>info</template>
+                </PersonalDataItem>
+            </div>
             <div class="center"></div>
             <div class="right"></div>
         </section>
@@ -14,6 +19,7 @@
 
 <script setup lang="ts" name="home">
 import Header from '@/components/header/header.vue';
+import PersonalDataItem from './components/personal-data-item/personal-data-item.vue';
 
 </script>
 <style scoped lang="scss">
