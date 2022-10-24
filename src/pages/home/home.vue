@@ -11,7 +11,7 @@
 import Header from '@/components/header/header.vue';
 
 </script>
-<style scoped>
+<style scoped lang="scss">
 
 .personalInfo{
     border: 1px solid red;
@@ -21,6 +21,12 @@ import Header from '@/components/header/header.vue';
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    h1{
+        font-weight:100;
+        font-size: 64px;
+        margin-bottom: 10px;
+    }
 }
 
 </style>
