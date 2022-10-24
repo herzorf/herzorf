@@ -1,10 +1,15 @@
 <template>
         <Header />
-        <div class="personalInfo">
+        <section class="personalInfo">
             <h1>Herzorf</h1>
             <h1>一个web开发工程师</h1>
             <h1>base in shanghai</h1>
-        </div>
+        </section>
+        <section class="personalData">
+            <div class="left"></div>
+            <div class="center"></div>
+            <div class="right"></div>
+        </section>
 </template>
 
 <script setup lang="ts" name="home">
@@ -28,5 +33,18 @@ import Header from '@/components/header/header.vue';
         margin-bottom: 10px;
     }
 }
+.personalData{
+    border: 1px solid red;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        width: 30%;
+        height: 100vh;
+        border: 1px solid green;
+    }
+}
+
 
 </style>
