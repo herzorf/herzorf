@@ -16,5 +16,6 @@ export default {
 <style lang="scss">
     .itemWrapper{
         border: 1px solid black;
+        
     }
 </style>

@@ -11,6 +11,14 @@
                     <template #title>title</template>
                     <template #info>info</template>
                 </PersonalDataItem>
+                <PersonalDataItem>
+                    <template #title>title</template>
+                    <template #info>info</template>
+                </PersonalDataItem> 
+                <PersonalDataItem>
+                    <template #title>title</template>
+                    <template #info>info</template>
+                </PersonalDataItem>
             </div>
             <div class="center"></div>
             <div class="right"></div>
@@ -25,7 +33,6 @@ import PersonalDataItem from './components/personal-data-item/personal-data-item
 <style scoped lang="scss">
 
 .personalInfo{
-    border: 1px solid red;
     height: 60vh;
     display: flex;
     
@@ -40,15 +47,17 @@ import PersonalDataItem from './components/personal-data-item/personal-data-item
     }
 }
 .personalData{
-    border: 1px solid red;
     height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    div{
+    >div{
         width: 30%;
         height: 100vh;
         border: 1px solid green;
+        .left{
+            
+        }
     }
 }
 

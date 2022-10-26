@@ -15,7 +15,6 @@ import Logo from "@/assets/logo.png"
 </script>   
 <style lang="scss" scoped>
 header{
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;

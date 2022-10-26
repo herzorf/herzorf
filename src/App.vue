@@ -1,5 +1,4 @@
 
-
 <template>
   <div class="wrapper">
     <router-view></router-view>
@@ -15,6 +14,5 @@
   width: 90%;
   min-height: 100vh;
   margin: 0 auto;
-  border: 1px solid grey;
 }
 </style>
