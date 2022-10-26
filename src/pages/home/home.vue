@@ -20,7 +20,9 @@
                     <template #info>info</template>
                 </PersonalDataItem>
             </div>
-            <div class="center"></div>
+            <div class="center">
+                <img :src="avatar" width="160" alt="自拍">
+            </div>
             <div class="right">
                 <PersonalDataItem>
                     <template #title>工作经验</template>
@@ -45,7 +47,7 @@
 <script setup lang="ts" name="home">
 import Header from '@/components/header/header.vue';
 import PersonalDataItem from './components/personal-data-item/personal-data-item.vue';
-
+import avatar from "@/assets/avatar.jpg"
 </script>
 <style scoped lang="scss">
 
@@ -69,7 +71,7 @@ import PersonalDataItem from './components/personal-data-item/personal-data-item
     justify-content: space-between;
     align-items: center;
     >div{
-        width: 30%;
+        width: 25%;
         height: 100vh;
         border: 1px solid green;
         display: flex;
@@ -77,6 +79,9 @@ import PersonalDataItem from './components/personal-data-item/personal-data-item
         justify-content: space-around;
         align-items: flex-start;
         &.left{
+        }
+        &.center{
+            flex-grow: 1;
         }
     }
 }
