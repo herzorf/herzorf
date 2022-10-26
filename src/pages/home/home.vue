@@ -8,20 +8,37 @@
         <section class="personalData">
             <div class="left">
                 <PersonalDataItem>
-                    <template #title>title</template>
-                    <template #info>info</template>
+                    <template #title>人生目标</template>
+                    <template #info>身体自由，思想自由，财务自由</template>
                 </PersonalDataItem>
                 <PersonalDataItem>
-                    <template #title>title</template>
+                    <template #title>目前具备的技能</template>
                     <template #info>info</template>
                 </PersonalDataItem> 
                 <PersonalDataItem>
-                    <template #title>title</template>
+                    <template #title>以后将要具备的技能</template>
                     <template #info>info</template>
                 </PersonalDataItem>
             </div>
             <div class="center"></div>
-            <div class="right"></div>
+            <div class="right">
+                <PersonalDataItem>
+                    <template #title>工作经验</template>
+                    <template #info>2022.8.1---至今</template>
+                </PersonalDataItem>
+                <PersonalDataItem>
+                    <template #title>年龄</template>
+                    <template #info>23</template>
+                </PersonalDataItem> 
+                <PersonalDataItem>
+                    <template #title>邮箱</template>
+                    <template #info>1446450047@qq.com</template>
+                </PersonalDataItem>
+                <PersonalDataItem>
+                    <template #title>所写的博客数量</template>
+                    <template #info>35</template>
+                </PersonalDataItem>
+            </div>
         </section>
 </template>
 
@@ -55,8 +72,11 @@ import PersonalDataItem from './components/personal-data-item/personal-data-item
         width: 30%;
         height: 100vh;
         border: 1px solid green;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
         &.left{
-            border: 10px solid red;
         }
     }
 }
