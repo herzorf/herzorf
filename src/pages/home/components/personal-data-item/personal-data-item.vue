@@ -1,6 +1,6 @@
 <template>
     <div class="itemWrapper">
-        <div>
+        <div class="title">
             <slot name="title"></slot>
         </div>
         <div class="info">
@@ -15,7 +15,14 @@ export default {
 </script>
 <style lang="scss">
     .itemWrapper{
-        border: 1px solid black;
+        .title{
+            font-size: 14px;
+            color: #999;
+        }
+        .info{
+            font-size: 24px;
+            margin: 18px 0;
+        }
         
     }
 </style>

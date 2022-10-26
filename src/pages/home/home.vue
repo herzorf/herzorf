@@ -3,21 +3,25 @@
         <section class="personalInfo">
             <h1>Herzorf</h1>
             <h1>一个web开发工程师</h1>
-            <h1>base in shanghai</h1>
         </section>
         <section class="personalData">
             <div class="left">
+                <PersonalDataItem>
+                    <template #title>姓名</template>
+                    <template #info>何中峰(Herzorf)</template>
+                </PersonalDataItem>
                 <PersonalDataItem>
                     <template #title>人生目标</template>
                     <template #info>身体自由，思想自由，财务自由</template>
                 </PersonalDataItem>
                 <PersonalDataItem>
                     <template #title>目前具备的技能</template>
-                    <template #info>info</template>
+                    <template #info>web开发
+                    </template>
                 </PersonalDataItem> 
                 <PersonalDataItem>
                     <template #title>以后将要具备的技能</template>
-                    <template #info>info</template>
+                    <template #info>全栈开发</template>
                 </PersonalDataItem>
             </div>
             <div class="center">
@@ -37,8 +41,8 @@
                     <template #info>1446450047@qq.com</template>
                 </PersonalDataItem>
                 <PersonalDataItem>
-                    <template #title>所写的博客数量</template>
-                    <template #info>35</template>
+                    <template #title>目前居住地</template>
+                    <template #info>上海</template>
                 </PersonalDataItem>
             </div>
         </section>
@@ -71,9 +75,8 @@ import avatar from "@/assets/avatar.jpg"
     justify-content: space-between;
     align-items: center;
     >div{
-        width: 25%;
+        width: 20%;
         height: 100vh;
-        border: 1px solid green;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
