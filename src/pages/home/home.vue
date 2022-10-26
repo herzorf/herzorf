@@ -55,8 +55,8 @@ import PersonalDataItem from './components/personal-data-item/personal-data-item
         width: 30%;
         height: 100vh;
         border: 1px solid green;
-        .left{
-            
+        &.left{
+            border: 10px solid red;
         }
     }
 }
