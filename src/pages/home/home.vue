@@ -21,6 +21,12 @@
                 </PersonalDataItem>
             </div>
         </section>
+        <section class="advantage" ref="advantage">
+            <h1>My Advantage</h1>
+            <div class="advantageContent">
+                <div class="advantageItem"></div>
+            </div>   
+        </section>
 </template>
 
 <script setup lang="ts" name="home">
@@ -30,16 +36,16 @@ import avatar from "@/assets/avatar.jpg"
 import {leftInfo,oberveApper,rightInfo} from "./util"
 import { onMounted, ref } from 'vue';
 const personalData = ref<HTMLElement>()
+const advantage = ref<HTMLElement>()
 onMounted(()=>{
     oberveApper(personalData.value!)
+    oberveApper(advantage.value!)
 })
 </script>
 <style scoped lang="scss">
-
 .personalInfo{
     height: 60vh;
     display: flex;
-    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -56,7 +62,8 @@ onMounted(()=>{
     justify-content: space-between;
     align-items: center;
     opacity: 0;
-    transition: 2s;
+    transition: 2.5s;
+    border-bottom: 1px solid black;
     &.appear{
         opacity: 1;
     }
@@ -70,6 +77,24 @@ onMounted(()=>{
         &.center{
             flex-grow: 1;
         }
+    }
+}
+.advantage{
+    height: 100vh;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    transition: 2.5s;
+    border-bottom: 1px solid black;
+    &.appear{
+        opacity: 1;
+    }
+    h1{
+        font-size: 48px;
+        font-weight: lighter;
     }
 }
 

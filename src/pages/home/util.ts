@@ -39,6 +39,8 @@ const oberveApper = function (element: Element) {
     const observe = new IntersectionObserver(function (entry) {
         if (entry[0].isIntersecting) {
             element.classList.add("appear")
+        } else {
+            element.classList.remove("appear")
         }
     }, { threshold: 0.1 })
     observe.observe(element)
