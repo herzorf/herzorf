@@ -4,45 +4,20 @@
             <h1>Herzorf</h1>
             <h1>一个web开发工程师</h1>
         </section>
-        <section class="personalData">
+        <section class="personalData" ref="personalData">
             <div class="left">
-                <PersonalDataItem>
-                    <template #title>姓名</template>
-                    <template #info>何中峰(Herzorf)</template>
-                </PersonalDataItem>
-                <PersonalDataItem>
-                    <template #title>人生目标</template>
-                    <template #info>身体自由，思想自由，财务自由</template>
-                </PersonalDataItem>
-                <PersonalDataItem>
-                    <template #title>目前具备的技能</template>
-                    <template #info>web开发
-                    </template>
-                </PersonalDataItem> 
-                <PersonalDataItem>
-                    <template #title>以后将要具备的技能</template>
-                    <template #info>全栈开发</template>
+                <PersonalDataItem v-for="item in leftInfo">
+                    <template #title>{{item.title}}</template>
+                    <template #info>{{item.info}}</template>
                 </PersonalDataItem>
             </div>
             <div class="center">
                 <img :src="avatar" width="160" alt="自拍">
             </div>
             <div class="right">
-                <PersonalDataItem>
-                    <template #title>工作经验</template>
-                    <template #info>2022.8.1---至今</template>
-                </PersonalDataItem>
-                <PersonalDataItem>
-                    <template #title>年龄</template>
-                    <template #info>23</template>
-                </PersonalDataItem> 
-                <PersonalDataItem>
-                    <template #title>邮箱</template>
-                    <template #info>1446450047@qq.com</template>
-                </PersonalDataItem>
-                <PersonalDataItem>
-                    <template #title>目前居住地</template>
-                    <template #info>上海</template>
+                <PersonalDataItem v-for="item in rightInfo">
+                    <template #title>{{item.title}}</template>
+                    <template #info>{{item.info}}</template>
                 </PersonalDataItem>
             </div>
         </section>
@@ -52,6 +27,46 @@
 import Header from '@/components/header/header.vue';
 import PersonalDataItem from './components/personal-data-item/personal-data-item.vue';
 import avatar from "@/assets/avatar.jpg"
+import { ref } from 'vue';
+const personalData = ref(null)
+
+const leftInfo = [
+    {
+        title:"姓名",
+        info:"何中峰(Herzorf)",
+    },
+    {
+        title:"人生目标",
+        info:"身体自由，思想自由，财务自由",
+    },
+    {
+        title:"目前具备的技能",
+        info:"web开发",
+    },
+    {
+        title:"以后将要具备的技能",
+        info:"全栈开发",
+    }
+]
+const rightInfo = [
+    {
+        title:"工作经验",
+        info:"2022.8.1---至今",
+    },
+    {
+        title:"年龄",
+        info:"23",
+    },
+    {
+        title:"邮箱",
+        info:"1446450047@qq.com",
+    },
+    {
+        title:"目前居住地",
+        info:"上海",
+    }
+]
+
 </script>
 <style scoped lang="scss">
 
