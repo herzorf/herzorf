@@ -4,7 +4,7 @@
             <h1>Herzorf</h1>
             <h1>一个web开发工程师</h1>
         </section>
-        <section class="personalData" ref="personalData">
+        <section class="personalData" ref="personalData" >
             <div class="left">
                 <PersonalDataItem v-for="item in leftInfo">
                     <template #title>{{item.title}}</template>
@@ -27,12 +27,12 @@
 import Header from '@/components/header/header.vue';
 import PersonalDataItem from './components/personal-data-item/personal-data-item.vue';
 import avatar from "@/assets/avatar.jpg"
-import {leftInfo,rightInfo} from "./util"
-import { ref } from 'vue';
-const personalData = ref(null)
-
-
-
+import {leftInfo,oberveApper,rightInfo} from "./util"
+import { onMounted, ref } from 'vue';
+const personalData = ref<HTMLElement>()
+onMounted(()=>{
+    oberveApper(personalData.value!)
+})
 </script>
 <style scoped lang="scss">
 
@@ -55,6 +55,11 @@ const personalData = ref(null)
     display: flex;
     justify-content: space-between;
     align-items: center;
+    opacity: 0;
+    transition: 2s;
+    &.appear{
+        opacity: 1;
+    }
     >div{
         width: 20%;
         height: 100vh;

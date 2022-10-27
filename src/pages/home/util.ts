@@ -35,4 +35,13 @@ const rightInfo = [
     }
 ]
 
-export { leftInfo, rightInfo }
+const oberveApper = function (element: Element) {
+    const observe = new IntersectionObserver(function (entry) {
+        if (entry[0].isIntersecting) {
+            element.classList.add("appear")
+        }
+    }, { threshold: 0.1 })
+    observe.observe(element)
+}
+
+export { leftInfo, rightInfo, oberveApper }
