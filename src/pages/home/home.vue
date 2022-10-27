@@ -62,8 +62,6 @@ const personalData = ref(null)
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
-        &.left{
-        }
         &.center{
             flex-grow: 1;
         }
