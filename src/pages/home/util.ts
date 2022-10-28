@@ -14,8 +14,8 @@ const leftInfo = [
     {
         title: "以后将要具备的技能",
         info: "全栈开发",
-    }
-]
+    },
+];
 const rightInfo = [
     {
         title: "工作经验",
@@ -32,61 +32,64 @@ const rightInfo = [
     {
         title: "目前居住地",
         info: "上海",
-    }
-]
+    },
+];
 
 const advantageItem = [
     {
         name: "HTML",
         class: "HTML",
-        percent: "70%"
+        percent: "70%",
     },
     {
         name: "CSS",
         class: "CSS",
-        percent: "88%"
-
-    }, {
+        percent: "88%",
+    },
+    {
         name: "JavaScript",
         class: "JavaScript",
-        percent: "80%"
-
-    }, {
+        percent: "80%",
+    },
+    {
         name: "Vue",
         class: "Vue",
-        percent: "60%"
-
-    }, {
+        percent: "60%",
+    },
+    {
         name: "React",
         class: "React",
-        percent: "80%"
-
-    }, {
+        percent: "80%",
+    },
+    {
         name: "Docker",
         class: "Docker",
-        percent: "60%"
-    }, {
+        percent: "60%",
+    },
+    {
         name: "Go",
         class: "Go",
-        percent: "40%"
-
-    }, {
+        percent: "40%",
+    },
+    {
         name: "TypeScript",
         class: "TypeScript",
-        percent: "50%"
+        percent: "50%",
     },
-]
-
+];
 
 const oberveApper = function (element: Element) {
-    const observe = new IntersectionObserver(function (entry) {
-        if (entry[0].isIntersecting) {
-            element.classList.add("appear")
-        } else {
-            element.classList.remove("appear")
-        }
-    }, { threshold: 0.1 })
-    observe.observe(element)
-}
+    const observe = new IntersectionObserver(
+        function (entry) {
+            if (entry[0].isIntersecting) {
+                element.classList.add("appear");
+            } else {
+                element.classList.remove("appear");
+            }
+        },
+        { threshold: 0.1 }
+    );
+    observe.observe(element);
+};
 
-export { leftInfo, rightInfo, oberveApper, advantageItem }
+export { leftInfo, rightInfo, oberveApper, advantageItem };

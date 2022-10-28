@@ -3,7 +3,7 @@ import App from './App.vue'
 import "./reset.css"
 import routes from "./routes"
 import { createRouter, createWebHashHistory } from "vue-router"
-import "./assets/font/fontcss.css"
+import "./assets/font/fontcss"
 
 const router = createRouter({
     history: createWebHashHistory(),
