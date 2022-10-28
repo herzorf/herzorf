@@ -24,7 +24,9 @@
         <section class="advantage" ref="advantage">
             <h1>My Advantage</h1>
             <div class="advantageContent">
-                <div class="advantageItem"></div>
+                <div class="advantageItem">
+                    <i class="iconfont icon-html"></i>
+                </div>
             </div>   
         </section>
 </template>
