@@ -25,7 +25,7 @@
             <h1>My Advantage</h1>
             <div class="advantageContent">
                 <div class="advantageItem">
-                    <i class="iconfont icon-html"></i>
+                    <Svg class="html"></Svg>
                 </div>
             </div>   
         </section>
@@ -37,6 +37,7 @@ import PersonalDataItem from './components/personal-data-item/personal-data-item
 import avatar from "@/assets/images/avatar.jpg"
 import {leftInfo,oberveApper,rightInfo} from "./util"
 import { onMounted, ref } from 'vue';
+import Svg from '../../components/svg/svg.vue';
 const personalData = ref<HTMLElement>()
 const advantage = ref<HTMLElement>()
 onMounted(()=>{
