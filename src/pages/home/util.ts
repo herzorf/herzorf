@@ -35,6 +35,49 @@ const rightInfo = [
     }
 ]
 
+const advantageItem = [
+    {
+        name: "HTML",
+        class: "HTML",
+        percent: "70%"
+    },
+    {
+        name: "CSS",
+        class: "CSS",
+        percent: "88%"
+
+    }, {
+        name: "JavaScript",
+        class: "JavaScript",
+        percent: "80%"
+
+    }, {
+        name: "Vue",
+        class: "Vue",
+        percent: "60%"
+
+    }, {
+        name: "React",
+        class: "React",
+        percent: "80%"
+
+    }, {
+        name: "Docker",
+        class: "Docker",
+        percent: "60%"
+    }, {
+        name: "Go",
+        class: "Go",
+        percent: "40%"
+
+    }, {
+        name: "TypeScript",
+        class: "TypeScript",
+        percent: "50%"
+    },
+]
+
+
 const oberveApper = function (element: Element) {
     const observe = new IntersectionObserver(function (entry) {
         if (entry[0].isIntersecting) {
@@ -46,4 +89,4 @@ const oberveApper = function (element: Element) {
     observe.observe(element)
 }
 
-export { leftInfo, rightInfo, oberveApper }
+export { leftInfo, rightInfo, oberveApper, advantageItem }

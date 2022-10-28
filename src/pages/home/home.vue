@@ -24,18 +24,23 @@
         <section class="advantage" ref="advantage">
             <h1>My Advantage</h1>
             <div class="advantageContent">
-                <div class="advantageItem">
-                    <Svg class="html"></Svg>
+                <div class="advantageItem" v-for="item in advantageItem">
+                    <div class="icon">
+                        <Svg :class="item.class"></Svg>
+                        <span>{{item.percent}}</span>
+                    </div>
+                    <span>{{item.name}}</span>
                 </div>
             </div>   
         </section>
+        <section style="height: 100vh;"></section>
 </template>
 
 <script setup lang="ts" name="home">
 import Header from '@/components/header/header.vue';
 import PersonalDataItem from './components/personal-data-item/personal-data-item.vue';
 import avatar from "@/assets/images/avatar.jpg"
-import {leftInfo,oberveApper,rightInfo} from "./util"
+import {leftInfo,oberveApper,rightInfo,advantageItem} from "./util"
 import { onMounted, ref } from 'vue';
 import Svg from '../../components/svg/svg.vue';
 const personalData = ref<HTMLElement>()
@@ -84,7 +89,6 @@ onMounted(()=>{
 }
 .advantage{
     height: 100vh;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -98,6 +102,36 @@ onMounted(()=>{
     h1{
         font-size: 48px;
         font-weight: lighter;
+    }
+    .advantageContent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        color: gray;
+        fill: grey;
+        .advantageItem{
+            padding: 16px 0;
+            font-size: 50px;
+            width: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            .icon{
+                font-size: 80px;
+                display: flex;
+                flex-direction: column;
+                span{
+                    margin: 12px 0;
+                    font-size: 30px;
+                    text-align: center;
+                }
+            }
+            span{
+                font-size: 20px
+            }
+        }
     }
 }
 
