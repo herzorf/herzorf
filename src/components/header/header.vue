@@ -11,7 +11,7 @@
 </template>     
 <script lang="ts" setup>
 import Social from './components/social/social.vue';
-import Logo from "@/assets/logo.png"
+import Logo from "@/assets/images/logo.png"
 </script>   
 <style lang="scss" scoped>
 header{

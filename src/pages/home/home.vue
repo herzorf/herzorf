@@ -32,7 +32,7 @@
 <script setup lang="ts" name="home">
 import Header from '@/components/header/header.vue';
 import PersonalDataItem from './components/personal-data-item/personal-data-item.vue';
-import avatar from "@/assets/avatar.jpg"
+import avatar from "@/assets/images/avatar.jpg"
 import {leftInfo,oberveApper,rightInfo} from "./util"
 import { onMounted, ref } from 'vue';
 const personalData = ref<HTMLElement>()
