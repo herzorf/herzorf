@@ -144,15 +144,32 @@ onMounted(() => {
 
             &:hover {
                 svg {
-                    animation: 1s jump;
+                    animation: 1s ease-in jump;
+                    overflow: auto;
                 }
 
                 @keyframes jump {
-                    from {
-                        transform: translateY(12px);
+                    0% {
+                        transform: translateY(-16px);
                     }
 
-                    to {
+                    20% {
+                        transform: translateY(0);
+                    }
+
+                    40% {
+                        transform: translateY(-8px);
+                    }
+
+                    60% {
+                        transform: translateY(0);
+                    }
+
+                    80% {
+                        transform: translateY(-2px);
+                    }
+
+                    100% {
                         transform: translateY(0);
                     }
                 }
