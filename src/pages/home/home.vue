@@ -24,8 +24,8 @@
   <section class="advantage" ref="advantage">
     <h1>My Advantage</h1>
     <div class="advantageContent">
-      <div class="advantageItem" v-for="item in advantageItem">
-        <div class="icon">
+      <div class="advantageItem"  v-for="item in advantageItem">
+        <div class="skill">
           <Svg :class="item.class"></Svg>
           <span>{{ item.percent }}</span>
         </div>
@@ -66,7 +66,7 @@ onMounted(() => {
 }
 
 .personalData {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,18 +116,19 @@ onMounted(() => {
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        flex-wrap: wrap;
 
         .advantageItem {
             padding: 16px 0;
             font-size: 50px;
-            width: 10%;
+            width: 100px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
 
-            .icon {
-                font-size: 150px;
+            .skill {
+                font-size: 100px;
                 display: flex;
                 flex-direction: column;
 
@@ -139,12 +140,12 @@ onMounted(() => {
             }
 
             span {
-                font-size: 20px;
+                font-size: 16px;
             }
 
             &:hover {
                 svg {
-                    animation: 1s ease-in jump;
+                    animation: 1.5s ease-in jump;
                     overflow: auto;
                 }
 
