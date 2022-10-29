@@ -49,7 +49,18 @@
     </div>
   </section>
   <section class="project">
-    <h1>我的项目</h1>
+    <h1>我的最新项目</h1>
+    <div class="showProjects">
+      <div class="projectItem">
+
+      </div>
+      <div class="projectItem">
+
+      </div>
+      <div class="projectItem">
+
+      </div>
+    </div>
   </section>
 </template>
 
@@ -201,6 +212,7 @@ onMounted(() => {
   align-items: center;
   opacity: 0;
   transition: 2.5s;
+  border-bottom: 1px solid black;
 
   h1 {
     font-size: 48px;
@@ -232,6 +244,33 @@ onMounted(() => {
         color: rgb(98, 97, 97);
         font-size: 16px;
       }
+    }
+  }
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+
+  h1 {
+    font-size: 48px;
+    font-weight: lighter;
+  }
+
+  .showProjects {
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .projectItem {
+      width: 30%;
+      height: 400px;
+      border: 1px solid red;
     }
   }
 }
