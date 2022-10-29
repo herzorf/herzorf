@@ -51,8 +51,10 @@
   <section class="project">
     <h1>我的最新项目</h1>
     <div class="showProjects">
-      <div class="projectItem">
-
+      <div class="projectItem" @click="gotoTop">
+          <img :src="logo" >
+          <p>个人空间</p>
+          <p>Vue3 + TS </p>
       </div>
       <div class="projectItem">
 
@@ -62,6 +64,9 @@
       </div>
     </div>
   </section>
+  <section class="whereIAm">
+    <h1>在哪可以找到我</h1>
+  </section>
 </template>
 
 <script setup lang="ts" name="home">
@@ -70,10 +75,14 @@ import PersonalDataItem from "./components/personal-data-item/personal-data-item
 import avatar from "@/assets/images/avatar.jpg";
 import { leftInfo, oberveApper, rightInfo, advantageItem } from "./util";
 import { onMounted, ref } from "vue";
+import logo from "@/assets/images/logo_transparent.png"
 import Svg from "../../components/svg/svg.vue";
 const personalData = ref<HTMLElement>();
 const advantage = ref<HTMLElement>();
 const experience = ref<HTMLElement>();
+const gotoTop = () => {
+  document.documentElement.scrollTop = 0
+}
 onMounted(() => {
   oberveApper(personalData.value!);
   oberveApper(advantage.value!);
@@ -81,6 +90,11 @@ onMounted(() => {
 });
 </script>
 <style scoped lang="scss">
+h1 {
+  font-size: 48px;
+  font-weight: lighter;
+}
+
 .personalInfo {
   height: 60vh;
   display: flex;
@@ -127,12 +141,6 @@ onMounted(() => {
   opacity: 0;
   transition: 2.5s;
   border-bottom: 1px solid black;
-
-
-  h1 {
-    font-size: 48px;
-    font-weight: lighter;
-  }
 
   .advantageContent {
     display: flex;
@@ -198,8 +206,6 @@ onMounted(() => {
           }
         }
       }
-
-
     }
   }
 }
@@ -213,11 +219,6 @@ onMounted(() => {
   opacity: 0;
   transition: 2.5s;
   border-bottom: 1px solid black;
-
-  h1 {
-    font-size: 48px;
-    font-weight: lighter;
-  }
 
   .experienceItem {
     width: 100%;
@@ -256,13 +257,7 @@ onMounted(() => {
   height: 100vh;
   width: 100%;
 
-  h1 {
-    font-size: 48px;
-    font-weight: lighter;
-  }
-
   .showProjects {
-    border: 1px solid black;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -270,9 +265,33 @@ onMounted(() => {
     .projectItem {
       width: 30%;
       height: 400px;
-      border: 1px solid red;
+      cursor: pointer;
+      border: 1px solid gray;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 80%;
+      }
+
+      p {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 8px;
+      }
     }
   }
+}
+
+.whereIAm {
+  height: 100vh;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .appear {
