@@ -48,7 +48,7 @@
       </div>
     </div>
   </section>
-  <section class="project">
+  <section class="project" ref="project">
     <h1>我的最新项目</h1>
     <div class="showProjects">
       <div class="projectItem" @click="gotoTop">
@@ -66,6 +66,28 @@
   </section>
   <section class="whereIAm">
     <h1>在哪可以找到我</h1>
+    <div class="social">
+      <div class="socialItem">
+        <a href="https://github.com/herzorf">
+          <Svg class="github"></Svg>
+        </a>
+      </div>
+      <div class="socialItem">
+        <a href="https://www.zhihu.com/people/hezhongfeng/posts">
+        <Svg class="zhihu"></Svg>
+        </a>
+      </div>
+      <div class="socialItem">
+        <a href="https://juejin.cn/user/3122268755467566/posts">
+        <Svg class="juejin"></Svg>
+        </a>
+      </div>
+      <div class="socialItem">
+        <a href="https://twitter.com/herzorf">
+          <Svg class="twitter"></Svg>
+        </a>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -79,6 +101,7 @@ import logo from "@/assets/images/logo_transparent.png"
 import Svg from "../../components/svg/svg.vue";
 const personalData = ref<HTMLElement>();
 const advantage = ref<HTMLElement>();
+const project = ref<HTMLElement>();
 const experience = ref<HTMLElement>();
 const gotoTop = () => {
   document.documentElement.scrollTop = 0
@@ -86,6 +109,7 @@ const gotoTop = () => {
 onMounted(() => {
   oberveApper(personalData.value!);
   oberveApper(advantage.value!);
+  oberveApper(project.value!);
   oberveApper(experience.value!);
 });
 </script>
@@ -256,6 +280,8 @@ h1 {
   align-items: center;
   height: 100vh;
   width: 100%;
+  opacity: 0;
+  transition: 2.5s;
 
   .showProjects {
     width: 100%;
@@ -287,11 +313,22 @@ h1 {
 
 .whereIAm {
   height: 100vh;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+
+  .social {
+
+    width: 80%;
+    font-size: 56px;
+    justify-content: space-around;
+    display: flex;
+
+    .socialItem {
+      cursor: pointer;
+    }
+  }
 }
 
 .appear {
