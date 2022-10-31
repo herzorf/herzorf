@@ -207,31 +207,7 @@ h1 {
           overflow: auto;
         }
 
-        @keyframes jump {
-          0% {
-            transform: translateY(-16px);
-          }
 
-          20% {
-            transform: translateY(0);
-          }
-
-          40% {
-            transform: translateY(-8px);
-          }
-
-          60% {
-            transform: translateY(0);
-          }
-
-          80% {
-            transform: translateY(-2px);
-          }
-
-          100% {
-            transform: translateY(0);
-          }
-        }
       }
     }
   }
@@ -334,6 +310,10 @@ h1 {
 
     .socialItem {
       cursor: pointer;
+
+      &:hover {
+        animation: jump 1s;
+      }
     }
   }
 }
@@ -346,5 +326,31 @@ footer {
 
 .appear {
   opacity: 1;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(-16px);
+  }
+
+  20% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-8px);
+  }
+
+  60% {
+    transform: translateY(0);
+  }
+
+  80% {
+    transform: translateY(-2px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 </style>
