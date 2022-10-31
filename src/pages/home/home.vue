@@ -64,7 +64,7 @@
       </div>
     </div>
   </section>
-  <section class="whereIAm">
+  <section class="whereIAm" ref="whereIAm">
     <h1>在哪可以找到我</h1>
     <div class="social">
       <div class="socialItem">
@@ -103,6 +103,7 @@ const personalData = ref<HTMLElement>();
 const advantage = ref<HTMLElement>();
 const project = ref<HTMLElement>();
 const experience = ref<HTMLElement>();
+const whereIAm = ref<HTMLElement>();
 const gotoTop = () => {
   document.documentElement.scrollTop = 0
 }
@@ -111,6 +112,7 @@ onMounted(() => {
   oberveApper(advantage.value!);
   oberveApper(project.value!);
   oberveApper(experience.value!);
+  oberveApper(whereIAm.value!);
 });
 </script>
 <style scoped lang="scss">
@@ -282,6 +284,7 @@ h1 {
   width: 100%;
   opacity: 0;
   transition: 2.5s;
+  border-bottom: 1px solid black;
 
   .showProjects {
     width: 100%;
@@ -317,6 +320,9 @@ h1 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  opacity: 0;
+  transition: 2.5s;
+  border-bottom: 1px solid black;
 
   .social {
 
