@@ -89,6 +89,7 @@
       </div>
     </div>
   </section>
+  <footer>  Copyright © 2022  Herzorf</footer>
 </template>
 
 <script setup lang="ts" name="home">
@@ -335,6 +336,12 @@ h1 {
       cursor: pointer;
     }
   }
+}
+
+footer {
+  text-align: center;
+  margin: 8px 0;
+  font-size: 6px;
 }
 
 .appear {
