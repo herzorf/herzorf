@@ -4,6 +4,9 @@
             <li>
                 <router-link to="about">about</router-link>
             </li>
+            <li>
+                <router-link to="blog">Blog</router-link>
+            </li>
         </ul>
         <router-link to="/"><img :src="Logo" alt="logo" /></router-link>
         <Social />
@@ -14,12 +17,28 @@ import Social from './components/social/social.vue';
 import Logo from "@/assets/images/logo.png"
 </script>   
 <style lang="scss" scoped>
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    img{
+    ul {
+        display: flex;
+        flex-grow: 0.3;
+        justify-content: space-around;
+
+        li {
+            &:hover {
+                border-bottom: 1px solid black;
+            }
+        }
+    }
+
+    a {
+        color: black;
+    }
+
+    img {
         width: 150px;
         height: 150px;
     }
