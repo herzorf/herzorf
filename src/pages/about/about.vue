@@ -4,6 +4,8 @@
     </div>
 </template>
 <script setup lang="ts" name="about">
+import Header from '../../components/header/header.vue';
 </script>
 <style scoped lang="scss">
+
 </style>

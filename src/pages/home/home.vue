@@ -1,5 +1,4 @@
 <template>
-  <Header />
   <section class="personalInfo">
     <h1>Herzorf</h1>
     <h1>一个web开发工程师</h1>
