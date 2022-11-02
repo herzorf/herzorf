@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>about</h1>
+        <h1>关于我。。。。还没写。。。。不知道写啥。。。。。</h1>
     </div>
 </template>
 <script setup lang="ts" name="about">
