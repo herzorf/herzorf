@@ -20,7 +20,7 @@ watch(() => route.path, async () => { path.value = route.path })
 <style scoped>
 .wrapper {
   width: 90%;
-  min-height: 100%;
+  min-height: 100vh;
   margin: 0 auto;
 }
 </style>
