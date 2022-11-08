@@ -22,10 +22,13 @@ article {
 
     aside {
         border: 1px solid red;
+        width: 30%;
+
     }
 
     main {
         border: 1px solid black;
+        width: 70%;
     }
 }
 </style>
