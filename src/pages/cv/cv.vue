@@ -2,7 +2,7 @@
     <article>
         <aside>
             <div class="avatar">
-                <img :src="avatar" alt="">
+                <img :src="avatar" width="160" height="160" alt="">
             </div>
         </aside>
         <main>主要内容</main>
