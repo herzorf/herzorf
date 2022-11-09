@@ -1,12 +1,16 @@
 <template >
     <article>
         <aside>
-            侧边栏
+            <div class="avatar">
+                <img :src="avatar" alt="">
+            </div>
         </aside>
         <main>主要内容</main>
     </article>
 </template>
 <script setup lang="ts">
+
+import avatar from "@/assets/images/avatar.jpg"
 
 </script>
 <style lang="scss">
