@@ -7,10 +7,10 @@
                     <p>应聘前端工程师</p>
             </div>
             <ul class="info">
-               <li> <Svg class="age" ></Svg> <span>xxxxx</span></li>
-               <li> <Svg class="address" ></Svg> <span>xxxxx</span> </li>
-               <li> <Svg class="mobile" ></Svg> <span>xxxxx</span> </li>
-               <li> <Svg class="email" ></Svg> <span>xxxxx</span> </li>
+               <li> <Svg class="age" ></Svg> <span>1999/10/25</span></li>
+               <li> <Svg class="address" ></Svg> <span>上海市徐汇区</span> </li>
+               <li> <Svg class="mobile" ></Svg> <span>17384888339</span> </li>
+               <li> <Svg class="email" ></Svg> <span>herzorf@icloud.com</span> </li>
                <li> <Svg class="weixin" ></Svg> <span>xxxxx</span> </li>
                <li> <Svg class="colleague" ></Svg> <span>xxxxx</span> </li>
                <li> <Svg class="school" ></Svg> <span>xxxxx</span> </li>
