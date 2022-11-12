@@ -14,6 +14,7 @@
         <li><Svg class="weixin"></Svg> <span>hzf1446450047</span></li>
         <li><Svg class="colleague"></Svg> <span>西北大学(211)</span></li>
         <li><Svg class="school"></Svg> <span>2022/7毕业</span></li>
+        <li><Svg class="major"></Svg> <span>软件工程专业</span></li>
       </ul>
     </aside>
     <main>
