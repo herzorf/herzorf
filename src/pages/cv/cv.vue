@@ -11,18 +11,23 @@
                <li> <Svg class="address" ></Svg> <span>上海市徐汇区</span> </li>
                <li> <Svg class="mobile" ></Svg> <span>17384888339</span> </li>
                <li> <Svg class="email" ></Svg> <span>herzorf@icloud.com</span> </li>
-               <li> <Svg class="weixin" ></Svg> <span>xxxxx</span> </li>
-               <li> <Svg class="colleague" ></Svg> <span>xxxxx</span> </li>
-               <li> <Svg class="school" ></Svg> <span>xxxxx</span> </li>
+               <li> <Svg class="weixin" ></Svg> <span>hzf1446450047</span> </li>
+               <li> <Svg class="colleague" ></Svg> <span>西北大学(211)</span> </li>
+               <li> <Svg class="school" ></Svg> <span>2022/7毕业</span> </li>
             </ul>
         </aside>
-        <main>主要内容</main>
+        <main>
+            <section>
+                <MainTitle>我的技能</MainTitle>
+            </section>
+        </main>
     </article>
 </template>
 <script setup lang="ts">
 
 import avatar from "@/assets/images/avatar.jpg"
 import Svg from "@/components/svg/svg.vue";
+import MainTitle from "./components/main-title.vue";
 
 </script>
 <style lang="scss">
@@ -37,7 +42,6 @@ article {
 
     aside {
         padding: 1em;
-        border: 1px solid red;
         width: 30%;
         background-color: #ececec;
 
@@ -56,7 +60,6 @@ article {
         }
 
         .info {
-            border: 1px solid red;
             margin-top: 4em;
             display: flex;
             flex-direction: column;
@@ -83,6 +86,10 @@ article {
         margin: 20px 0;
         border: 1px solid black;
         width: 70%;
+
+        h1 {
+            font-size: 30px;
+        }
     }
 }
 </style>
