@@ -35,14 +35,14 @@ article {
     width: 21cm;
     overflow: hidden;
     min-height: 29.7cm;
-    border: 1px solid blue;
     margin: 0 auto;
     font-family: initial;
+    padding: 0 1em;
 
     aside {
-        padding: 1em;
         width: 30%;
         background-color: #ececec;
+        padding: 1em;
 
         .avatar {
             display: flex;
