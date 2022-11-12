@@ -19,11 +19,13 @@ import MainTitle from "./main-title.vue";
 import WorkExperience from "./work-experience.vue";
 </script>
 <style lang="scss" scoped>
-a {
-    color: initial;
-}
+section {
+  margin-bottom: 1em;
 
-ul {
+
+
+  ul {
     list-style-type: initial;
+  }
 }
 </style>

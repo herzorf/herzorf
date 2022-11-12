@@ -20,6 +20,7 @@
     <main>
       <MySkill />
       <MyWorkExperience/>
+      <MyProjectExperience/>
     </main>
   </article>
 </template>
@@ -28,8 +29,13 @@ import avatar from "@/assets/images/avatar.jpg";
 import Svg from "@/components/svg/svg.vue";
 import MyWorkExperience from "./components/my-work-experience.vue";
 import MySkill from "./components/my-skill.vue";
+import MyProjectExperience from "./components/my-project-experience.vue";
 </script>
 <style lang="scss" scope>
+a {
+    color: rgb(50, 168, 214);
+}
+
 article {
     display: flex;
     width: 21cm;

@@ -17,19 +17,24 @@
 <script setup lang="ts"></script>
 <style lang="scss" scoped>
 .wrapper {
-   margin-top: 22px;
+  margin-top: 22px;
 
-   h3 {
-      margin-bottom: 16px;
-   }
+  h3 {
+    margin-bottom: 16px;
+  }
 
-   h4 {
-      margin-bottom: 8px;
-   }
+  h4 {
+    margin-bottom: 8px;
+  }
 
-   div {
-      margin-top: 12px;
-      margin-left: 28px;
-   }
+  h3,
+  h4 {
+    color: rgb(113, 113, 113);
+  }
+
+  div {
+    margin-top: 12px;
+    margin-left: 28px;
+  }
 }
 </style>
