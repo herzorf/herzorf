@@ -18,6 +18,7 @@
         </aside>
         <main>
           <MySkill />
+          <MyProject/>
         </main>
     </article>
 </template>
@@ -25,6 +26,7 @@
 
 import avatar from "@/assets/images/avatar.jpg"
 import Svg from "@/components/svg/svg.vue";
+import MyProject from "./components/my-project.vue";
 import MySkill from "./components/my-skill.vue";
 
 </script>

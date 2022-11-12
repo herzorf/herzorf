@@ -17,13 +17,18 @@ import Orange from "./orange.vue";
 
 </script>
 <style lang="scss" scoped>
-ul {
-    list-style-type: initial;
-    margin-left: 40px;
-    margin-top: 24px;
+section {
 
-    li {
-        margin-bottom: 6px;
+    margin-bottom: 30px;
+
+    ul {
+        list-style-type: initial;
+        margin-left: 40px;
+        margin-top: 24px;
+
+        li {
+            margin-bottom: 6px;
+        }
     }
 }
 </style>
