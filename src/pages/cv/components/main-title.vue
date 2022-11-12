@@ -3,9 +3,6 @@
         <slot></slot>
     </p>
 </template>
-<script setup lang="ts">
-
-</script>
 <style lang="scss" scoped>
 p {
     font-size: 28px;

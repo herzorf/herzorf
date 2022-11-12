@@ -18,7 +18,14 @@
         </aside>
         <main>
           <MySkill />
-          <MyProject/>
+          <MyProject>
+                <template #title>
+                    工作经历
+                </template>
+                <template #projectName>
+                    SocialX
+                </template>
+            </MyProject>
         </main>
     </article>
 </template>
