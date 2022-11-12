@@ -13,8 +13,8 @@
      </ProjectExperience>
      <ProjectExperience>
       <template #projectName>记账薄</template>
-      <template #link>  <span><a href="https://github.com/herzorf/purse-vue">Vue2版本源码</a> <a href="https://github.com/herzorf/where-is-my-money">React版本源码</a></span>  </template>
-      <template #info>这两个项目是2020年学习<Orange>React</Orange>和<Orange>Vue2</Orange>时写的一个记账项目，功能包括<Orange>记账，查账，删除记录,编辑记账类型</Orange>等功能，数据存储在<Orange>LocalStorage</Orange>中，这两个项目所涉及的技术栈包括<Orange>Vue2 / React / React(Vue) Router / TypeScript</Orange> 。</template>
+      <template #link><span><a href="https://github.com/herzorf/purse-vue">Vue2版本源码</a> <a href="https://github.com/herzorf/where-is-my-money">React版本源码</a></span>  </template>
+      <template #info>这两个项目是2020年学习<Orange>React</Orange>和<Orange>Vue2</Orange>时写的一个记账项目，功能包括<Orange>记账，查账，删除记录,编辑记账类型</Orange>等功能，数据存储在<Orange>LocalStorage</Orange>中，这两个项目所涉及的技术栈包括<Orange>Vue2 / React / React(Vue) Router / TypeScript</Orange>。</template>
      </ProjectExperience>
    </section>
 </template>
