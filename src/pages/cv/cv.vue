@@ -19,14 +19,14 @@
     </aside>
     <main>
       <MySkill />
-      <MyProject/>
+      <MyWorkExperience/>
     </main>
   </article>
 </template>
 <script setup lang="ts">
 import avatar from "@/assets/images/avatar.jpg";
 import Svg from "@/components/svg/svg.vue";
-import MyProject from "./components/my-project.vue";
+import MyWorkExperience from "./components/my-work-experience.vue";
 import MySkill from "./components/my-skill.vue";
 </script>
 <style lang="scss" scope>
