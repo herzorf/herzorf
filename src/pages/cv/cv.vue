@@ -17,20 +17,18 @@
             </ul>
         </aside>
         <main>
-            <section>
-                <MainTitle>我的技能</MainTitle>
-            </section>
+          <MySkill />
         </main>
     </article>
 </template>
-<script setup lang="ts">
+<script setup lang="ts" >
 
 import avatar from "@/assets/images/avatar.jpg"
 import Svg from "@/components/svg/svg.vue";
-import MainTitle from "./components/main-title.vue";
+import MySkill from "./components/my-skill.vue";
 
 </script>
-<style lang="scss">
+<style lang="scss" scope>
 article {
     display: flex;
     width: 21cm;
@@ -83,13 +81,8 @@ article {
     }
 
     main {
-        margin: 20px 0;
-        border: 1px solid black;
+        margin: 20px;
         width: 70%;
-
-        h1 {
-            font-size: 30px;
-        }
     }
 }
 </style>

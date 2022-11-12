@@ -1,13 +1,10 @@
 <template>
-    <p>
+    <span>
         <slot></slot>
-    </p>
+    </span>
 </template>
-<script setup lang="ts">
-
-</script>
 <style lang="scss" scoped>
-p {
-    font-size: 28px;
+span {
+    color: #f60;
 }
 </style>
