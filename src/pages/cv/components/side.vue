@@ -15,17 +15,75 @@
         <li><Svg class="school"></Svg> <span>2022/7毕业</span></li>
         <li><Svg class="major"></Svg> <span>软件工程专业</span></li>
       </ul>
+      <div class="skillMap" ref="skillMap">
+      </div>
+      <ul class="info">
+        <li><Svg class="zhihu"></Svg> <span><a href="https://github.com/herzorf">Github主页</a></span></li>
+        <li><Svg class="github"></Svg> <span> <a href="https://www.zhihu.com/people/hezhongfeng/posts">知乎主页</a> </span></li>
+
+      </ul>
     </aside>
 </template>
 <script setup lang="ts">
 import avatar from "@/assets/images/avatar.jpg";
 import Svg from "@/components/svg/svg.vue";
+import { onMounted, ref } from "vue";
+import * as echarts from 'echarts';
+
+const skillMap = ref(null)
+
+onMounted(() => {
+    const myChart = echarts.init(skillMap.value!);
+    const option = {
+        title: {
+            text: '我的技能',
+            left: "center",
+            textStyle: {
+                color: "#fff"
+            }
+        },
+        radar: {
+            name: {
+                textStyle: {
+                    color: '#000',
+                    backgroundColor: '#f7f7ee',
+                    borderRadius: 3,
+                    padding: [1, 1],
+                    fontSize: 12,
+                }
+            },
+            indicator: [
+                { name: 'React', max: 100 },
+                { name: 'Vue', max: 100 },
+                { name: 'ES6', max: 100 },
+                { name: 'go', max: 100 },
+                { name: 'CSS', max: 100 },
+                { name: 'H5', max: 100 }
+            ]
+        },
+        series: [
+            {
+                type: 'radar',
+                data: [
+                    {
+                        value: [80, 70, 85, 50, 80, 75],
+                        name: '我的技能'
+                    }
+                ]
+            }
+        ]
+    };
+
+
+    myChart.setOption(option);
+
+})
 </script>
 <style lang="scss">
 aside {
     width: 30%;
     background-color: #ececec;
-    padding: 1em;
+    padding: 1em 0;
 
     .avatar {
         display: flex;
@@ -42,11 +100,12 @@ aside {
     }
 
     .info {
-        margin-top: 4em;
+        margin-top: 2em;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        padding: 12px;
 
         li {
             width: 100%;
@@ -59,6 +118,12 @@ aside {
                 padding-left: 8px;
             }
         }
+    }
+
+    .skillMap {
+        margin-top: 24px;
+        height: 300px;
+        background-color: #7BBAAA;
     }
 }
 </style>
