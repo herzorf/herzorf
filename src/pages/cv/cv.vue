@@ -21,11 +21,7 @@ import OtherLink from "./components/other-link.vue";
 import AboutMe from "./components/about-me.vue";
 import Side from "./components/side.vue";
 </script>
-<style lang="scss" scope>
-a {
-    color: rgb(50, 168, 214);
-}
-
+<style lang="scss" scoped>
 article {
     display: flex;
     width: 21cm;
@@ -34,6 +30,10 @@ article {
     margin: 0 auto;
     font-family: initial;
     padding: 0 1em;
+
+    &:deep(a) {
+        color: rgb(50, 168, 214);
+    }
 
     main {
         margin: 20px;
