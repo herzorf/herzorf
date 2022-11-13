@@ -13,6 +13,10 @@ div {
     justify-content: space-between;
     margin-top: 12px;
 
+    span {
+        margin-bottom: 12px;
+    }
+
     span:first-child {
         color: rgb(113, 113, 113);
     }

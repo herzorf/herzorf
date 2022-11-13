@@ -20,7 +20,7 @@ import WorkExperience from "./work-experience.vue";
 </script>
 <style lang="scss" scoped>
 section {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 
   ul {
     list-style-type: initial;

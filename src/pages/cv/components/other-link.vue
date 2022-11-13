@@ -13,10 +13,10 @@ import MainTitle from './main-title.vue';
 </script>
 <style lang="scss" scoped>
 section {
-    margin-top: 16px;
+    margin-top: 12px;
 
     p {
-        margin-top: 2em;
+        margin-top: 1em;
         display: flex;
     }
 }

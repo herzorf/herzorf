@@ -17,7 +17,7 @@
 <script setup lang="ts"></script>
 <style lang="scss" scoped>
 .wrapper {
-  margin-top: 22px;
+  margin-top: 24px;
 
   h3 {
     margin-bottom: 16px;
