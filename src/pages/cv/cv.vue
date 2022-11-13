@@ -23,6 +23,7 @@
       <MyProjectExperience/>
       <OtherProject/>
       <OtherLink/>
+      <AboutMe/>
     </main>
   </article>
 </template>
@@ -34,6 +35,7 @@ import MySkill from "./components/my-skill.vue";
 import MyProjectExperience from "./components/my-project-experience.vue";
 import OtherProject from "./components/other-project.vue";
 import OtherLink from "./components/other-link.vue";
+import AboutMe from "./components/about-me.vue";
 </script>
 <style lang="scss" scope>
 a {
