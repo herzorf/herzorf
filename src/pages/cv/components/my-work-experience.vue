@@ -22,8 +22,6 @@ import WorkExperience from "./work-experience.vue";
 section {
   margin-bottom: 1em;
 
-
-
   ul {
     list-style-type: initial;
   }
