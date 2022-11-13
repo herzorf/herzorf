@@ -21,6 +21,7 @@
       <MySkill />
       <MyWorkExperience/>
       <MyProjectExperience/>
+      <OtherProject/>
     </main>
   </article>
 </template>
@@ -30,6 +31,7 @@ import Svg from "@/components/svg/svg.vue";
 import MyWorkExperience from "./components/my-work-experience.vue";
 import MySkill from "./components/my-skill.vue";
 import MyProjectExperience from "./components/my-project-experience.vue";
+import OtherProject from "./components/other-project.vue";
 </script>
 <style lang="scss" scope>
 a {
