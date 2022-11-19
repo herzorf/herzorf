@@ -1,7 +1,7 @@
 <template>
   <Header v-if="path !== '/cv'" />
   <router-view></router-view>
-  <sideMenu v-if="sideMenuVisible.visible" />
+  <sideMenu :class="sideMenuVisible.visible && 'visible'" />
 </template>
 
 <script setup lang="ts" name="cv">

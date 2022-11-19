@@ -33,6 +33,10 @@
 </script>
 <style lang="scss" scoped>
   .sideMenu {
+    &.visible {
+      transform: translateX(0);
+    }
+    transition: 0.3s;
     background: #fff;
     position: fixed;
     display: flex;
@@ -43,6 +47,7 @@
     height: 100%;
     width: 300px;
     max-width: 100%;
+    transform: translateX(-300px);
     ul {
       padding: 60px 40px;
       li {
