@@ -1,5 +1,6 @@
 <template>
   <header>
+    <MenuIcon @click="sideMenuVisible.visible = true" />
     <ul>
       <li>
         <router-link to="about">About</router-link>
@@ -14,6 +15,7 @@
 </template>
 <script lang="ts" setup>
   import Social from "./components/social/social.vue";
+  import MenuIcon from "./components/menuIcon/menu-icon.vue";
   import Logo from "@/assets/images/logo.png";
   import { useCounterStore } from "@/globalStore/globalStore";
   const sideMenuVisible = useCounterStore();
