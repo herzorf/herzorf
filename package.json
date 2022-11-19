@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "echarts": "^5.4.0",
+    "pinia": "^2.0.24",
     "sass": "^1.55.0",
     "vue": "^3.2.41",
     "vue-router": "4"
