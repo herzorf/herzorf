@@ -10,7 +10,7 @@
       </li>
     </ul>
     <router-link to="/"><img :src="Logo" alt="logo" /></router-link>
-    <Social />
+    <Social class="media" />
   </header>
 </template>
 <script lang="ts" setup>
@@ -36,6 +36,11 @@
           border-bottom: 1px solid black;
         }
       }
+      @media (max-width: 576px) {
+        & {
+          display: none;
+        }
+      }
     }
 
     a {
@@ -45,6 +50,11 @@
     img {
       width: 150px;
       height: 150px;
+    }
+    @media (max-width: 576px) {
+      .media {
+        display: none;
+      }
     }
   }
 </style>
