@@ -52,7 +52,7 @@
     .x {
       position: absolute;
       right: 30px;
-      font-size: 30px;
+      font-size: 40px;
       top: 30px;
       cursor: pointer;
     }
