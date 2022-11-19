@@ -1,7 +1,7 @@
 import { defineStore } from "pinia"
 import { ref } from "vue"
 
-export const useCounterStore = defineStore('sideMuneVisible', () => {
+const useCounterStore = defineStore('sideMenuVisible', () => {
     const visible = ref(true)
     function close() {
         visible.value = false
@@ -12,3 +12,5 @@ export const useCounterStore = defineStore('sideMuneVisible', () => {
 
     return { visible, close, open }
 })
+
+export { useCounterStore }
