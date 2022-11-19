@@ -88,7 +88,7 @@
       </div>
     </div>
   </section>
-  <footer>  Copyright © 2022  Herzorf</footer>
+  <footer>  Copyright © 2022  Herzorf 版权所有 陕ICP备2022012657号</footer>
 </template>
 
 <script setup lang="ts" name="home">
