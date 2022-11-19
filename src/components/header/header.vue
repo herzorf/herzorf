@@ -15,6 +15,9 @@
 <script lang="ts" setup>
 import Social from './components/social/social.vue';
 import Logo from "@/assets/images/logo.png"
+import { useCounterStore } from '@/globalStore/globalStore';
+const sideMuneVisible = useCounterStore()
+
 </script>   
 <style lang="scss" scoped>
 header {
