@@ -4,7 +4,9 @@
     <h1>一个web开发工程师</h1>
   </section>
   <div class="mobileAvatar">
-    <img :src="me" width="300" alt="自拍" />
+    <div class="border">
+      <img :src="me" width="300" alt="自拍" />
+    </div>
   </div>
   <section class="personalData" ref="personalData">
     <div class="left">
@@ -15,7 +17,7 @@
     </div>
     <div class="center">
       <div class="border">
-        <img :src="me" height="600" alt="自拍" />
+        <img :src="me" height="500" alt="自拍" />
       </div>
     </div>
     <div class="right">
@@ -126,15 +128,20 @@
   }
   .mobileAvatar {
     display: none;
-    border: 1px solid #dfdfdf;
-    overflow: hidden;
-    padding: 10px;
-    border-radius: 50%;
-    img {
+    width: 100%;
+    .border {
+      border: 1px solid #dfdfdf;
+      overflow: hidden;
+      padding: 10px;
       border-radius: 50%;
+      display: inline-block;
+      img {
+        border-radius: 50%;
+      }
     }
+
     @media (max-width: 576px) {
-      display: block;
+      display: inline-block;
       text-align: center;
     }
   }
