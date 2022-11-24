@@ -227,7 +227,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        margin: 0 30px;
+        @media (max-width: 576px) {
+          margin: 0 30px;
+        }
 
         .skill {
           font-size: 100px;
