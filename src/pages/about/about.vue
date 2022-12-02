@@ -14,9 +14,7 @@
     </p>
   </div>
 </template>
-<script setup lang="ts" name="about">
-  import Header from "../../components/header/header.vue";
-</script>
+<script setup lang="ts" name="about"></script>
 <style scoped lang="scss">
   .about {
     height: 100vh;
