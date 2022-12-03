@@ -3,10 +3,10 @@
     <MenuIcon @click="sideMenuVisible.visible = true" />
     <ul>
       <li>
-        <router-link to="about">About</router-link>
+        <router-link to="/about">About</router-link>
       </li>
       <li>
-        <router-link to="blog">Blog</router-link>
+        <router-link to="/blog">Blog</router-link>
       </li>
     </ul>
     <router-link to="/"><img :src="Logo" alt="logo" /></router-link>

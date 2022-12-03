@@ -2,10 +2,10 @@
   <div class="sideMenu">
     <ul>
       <li>
-        <router-link to="about">About</router-link>
+        <router-link to="/about">About</router-link>
       </li>
       <li>
-        <router-link to="blog">Blog</router-link>
+        <router-link to="/blog">Blog</router-link>
       </li>
     </ul>
     <div class="x" @click="sideMenuVisible.visible = false">x</div>
