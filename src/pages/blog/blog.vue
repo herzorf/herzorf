@@ -6,7 +6,7 @@
       >
 
       <h1>这里应该是博客的列表</h1>
-      <router-link to="/blog/blogview">博客详情</router-link>
+      <router-link to="/blog/blogview/jhj">博客详情</router-link>
     </h1>
   </div>
 </template>

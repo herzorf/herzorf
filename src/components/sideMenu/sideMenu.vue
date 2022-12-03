@@ -20,12 +20,10 @@
 
   const sideMenuVisible = useCounterStore();
   const route = useRoute();
-  console.log(route.path);
   onMounted(() => {
     watch(
       () => route.path,
       async (path) => {
-        console.log(path);
         sideMenuVisible.visible = false;
       }
     );

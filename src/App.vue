@@ -12,7 +12,6 @@
   import sideMenu from "@/components/sideMenu/sideMenu.vue";
 
   const sideMenuVisible = useCounterStore();
-  console.log(sideMenuVisible.visible);
 
   const route = useRoute();
   const path = ref("");
