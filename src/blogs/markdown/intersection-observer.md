@@ -1,10 +1,8 @@
 ---
-title: Hello from front-matter
-info: infoinfoinfoinfoinfo
-tags: ["111", "222", "333"]
+title: Intersection Observer API
+info: JavaScript的观察者 Intersection Observer API的基本使用
+tags: ["JavaScript", "MDN", "观察者"]
 ---
-
-# 笔记------交集观察者------Intersection Observer API
 
 最近写项目需要监听一个元素出现在视口中，然后给一个过渡动画，无意中发现了一个很好用的 API --- Intersection Observer API。之前监听一个元素是否出现在视口中都是去计算一个距离，这个很麻烦。但是这个 API 就很方便的解决了这个问题，可以直接监听。而且使用到的范围也很多，比如：图片懒加载，内容无限滚动，检测广告的曝光情况，在用户看见某个区域时执行任务或播放动画等等等等。
 
@@ -25,11 +23,11 @@ const option = {
 const callback = function (entry) {
   // entry.boundingClientRect      //返回包含目标元素的边界信息
   // entry.intersectionRatio       //返回intersectionRect 与 boundingClientRect 的比例值。
-  // entry.intersectionRect 			 //根和目标元素的相交区域。
-  // entry.isIntersecting					 //根元素与目标元素的相交状态，相交为true，不想交为false
-  // entry.rootBounds         		 //option中设置的根元素
-  // entry.target									 //监听的目标元素
-  // entry.time										 //返回一个记录从IntersectionObserver的时间原点到交叉被触发的时间的时间戳
+  // entry.intersectionRect        //根和目标元素的相交区域。
+  // entry.isIntersecting         //根元素与目标元素的相交状态，相交为true，不想交为false
+  // entry.rootBounds             //option中设置的根元素
+  // entry.target                 //监听的目标元素
+  // entry.time                   //返回一个记录从IntersectionObserver的时间原点到交叉被触发的时间的时间戳
 };
 const observer = new IntersectionObserver(callback, option);
 

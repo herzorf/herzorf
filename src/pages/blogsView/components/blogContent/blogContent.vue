@@ -1,5 +1,9 @@
 <template>
-  <div v-html="blogMenu[route.params.blogview]"></div>
+  <h1>{{ blog.title }}</h1>
+  <p>
+    <span v-for="item in blog.tags">#{{ item }}</span>
+  </p>
+  <div v-html="blog.component"></div>
 </template>
 <script setup>
   import Prism from "prismjs";
@@ -7,7 +11,7 @@
   import { onMounted } from "vue";
   import blogMenu from "@/blogs/blogMenu";
   const route = useRoute();
-
+  const blog = blogMenu[route.params.blogview];
   onMounted(() => {
     Prism.highlightAll();
   });
