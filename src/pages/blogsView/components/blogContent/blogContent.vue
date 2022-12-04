@@ -1,19 +1,13 @@
 <template>
-  <div v-html="blogMap[route.params.blogview]"></div>
+  <div v-html="blogMenu[route.params.blogview]"></div>
 </template>
 <script setup>
   import Prism from "prismjs";
   import { useRoute } from "vue-router";
-  import demo from "@/blogs/markdown/xxx.md";
-  import yyy, { attributes } from "@/blogs/markdown/yyy.md";
   import { onMounted } from "vue";
+  import blogMenu from "@/blogs/blogMenu";
   const route = useRoute();
 
-  const blogMap = {
-    demo: demo,
-    yyy: yyy,
-  };
-  console.log(attributes);
   console.log(route.params.blogview);
 
   onMounted(() => {
