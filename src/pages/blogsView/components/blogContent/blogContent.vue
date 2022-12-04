@@ -21,7 +21,7 @@
   });
 </script>
 <style lang="scss" scoped>
-  ::v-deep a {
+  :deep(a) {
     text-decoration: underline;
   }
 </style>
