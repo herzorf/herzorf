@@ -1,7 +1,9 @@
 <template>
-  <h1>{{ blog.title }}</h1>
+  <h1 class="title">{{ blog.title }}</h1>
   <p>
-    <span v-for="item in blog.tags">#{{ item }}</span>
+    <span v-for="item in blog.tags"
+      ># <Orange>{{ item }}</Orange>
+    </span>
   </p>
   <div v-html="blog.component"></div>
 </template>
@@ -10,6 +12,7 @@
   import { useRoute } from "vue-router";
   import { onMounted } from "vue";
   import blogMenu from "@/blogs/blogMenu";
+  import Orange from "@/pages/cv/components/orange.vue";
   const route = useRoute();
   const blog = blogMenu[route.params.blogview];
   onMounted(() => {
@@ -19,5 +22,12 @@
 <style lang="scss" scoped>
   :deep(a) {
     text-decoration: underline;
+  }
+  h1 {
+    font-weight: lighter;
+    margin-bottom: 12px;
+  }
+  p {
+    margin-bottom: 12px;
   }
 </style>
