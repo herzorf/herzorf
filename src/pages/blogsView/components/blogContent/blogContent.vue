@@ -14,4 +14,8 @@
     Prism.highlightAll();
   });
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  ::v-deep a {
+    text-decoration: underline;
+  }
+</style>
