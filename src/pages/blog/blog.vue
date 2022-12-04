@@ -1,10 +1,9 @@
 <template>
   <div class="blogListWrapper">
     <div class="blogItem">
-      <router-link to="/blog/blogview/demo">demo</router-link>
-    </div>
-    <div class="blogItem">
-      <router-link to="/blog/blogview/yyy">yyy</router-link>
+      <router-link to="/blog/blogview/intersectionObserver"
+        >intersectionObserver</router-link
+      >
     </div>
   </div>
 </template>
@@ -14,7 +13,6 @@
     text-decoration: underline;
   }
   .blogListWrapper {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
   }

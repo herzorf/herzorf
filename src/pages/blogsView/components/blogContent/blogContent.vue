@@ -8,8 +8,6 @@
   import blogMenu from "@/blogs/blogMenu";
   const route = useRoute();
 
-  console.log(route.params.blogview);
-
   onMounted(() => {
     Prism.highlightAll();
   });

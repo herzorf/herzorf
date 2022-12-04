@@ -1,7 +1,5 @@
-import demo from "@/blogs/markdown/xxx.md";
-import yyy, { attributes } from "@/blogs/markdown/yyy.md";
+import intersectionObserver from "@/blogs/markdown/intersection-observer.md";
 
 export default {
-    demo: demo,
-    yyy: yyy,
+    "intersectionObserver": intersectionObserver,
 };
