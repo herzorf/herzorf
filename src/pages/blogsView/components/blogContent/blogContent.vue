@@ -30,4 +30,7 @@
   p {
     margin-bottom: 12px;
   }
+  :deep(*) {
+    margin: revert;
+  }
 </style>

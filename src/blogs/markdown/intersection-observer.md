@@ -48,7 +48,7 @@ observer.observe(target);
 
 5.option.threshold:目标元素与根元素的交集程度，取之范围在 0-1 之间，可以是一个数组，表示交集程度达到数组中的程度时，都执行一次 callback 函数。
 
-6.callback 的参数默认是一个**`IntersectionObserverEntry`**的实例，它里面的属性都是只读的，我已写在了代码中
+6.callback 的参数默认是一个**IntersectionObserverEntry**的实例，它里面的属性都是只读的，我已写在了代码中
 
 ## 我的用法
 
