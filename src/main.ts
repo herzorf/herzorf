@@ -5,6 +5,9 @@ import routes from "./routes"
 import { createRouter, createWebHashHistory } from "vue-router"
 import "./assets/font/fontcss"
 import { createPinia } from 'pinia'
+import Prism from "prismjs";
+import "prismjs/themes/prism.css";
+Prism.highlightAll();
 
 const pinia = createPinia()
 const router = createRouter({

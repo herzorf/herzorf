@@ -9,9 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/prismjs": "^1.26.0",
     "echarts": "^5.4.0",
     "pinia": "^2.0.24",
+    "prismjs": "^1.29.0",
     "sass": "^1.55.0",
+    "vite-plugin-md-to-html": "^0.0.18",
     "vue": "^3.2.41",
     "vue-router": "4"
   },
