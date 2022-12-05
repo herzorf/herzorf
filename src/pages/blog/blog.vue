@@ -10,6 +10,7 @@
           #<Orange>{{ item }} </Orange></span
         >
       </p>
+      <p>{{ blog.time }}</p>
     </div>
   </div>
 </template>
@@ -22,6 +23,7 @@
     text-decoration: underline;
   }
   .blogListWrapper {
+    padding: 50px 50px 50px 100px;
     display: flex;
     flex-direction: column;
     .blogItem {

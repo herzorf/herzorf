@@ -5,6 +5,7 @@
       ># <Orange>{{ item }}</Orange>
     </span>
   </p>
+  <p>{{ blog.time }}</p>
   <div v-html="blog.component"></div>
 </template>
 <script setup>
