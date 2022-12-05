@@ -28,14 +28,15 @@
 <style lang="scss" scoped>
   .wrapper {
     display: flex;
-
+    padding-top: 50px;
     .menu {
-      width: 25%;
+      width: 20%;
       border: 1px solid red;
     }
     .content {
-      width: 75%;
-      border: 1px solid red;
+      width: 80%;
+      padding-left: 50px;
+      padding-bottom: 100px;
       :deep(a) {
         text-decoration: underline;
       }
