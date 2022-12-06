@@ -1,6 +1,12 @@
 <template>
   <div class="wrapper">
-    <div class="menu"></div>
+    <div class="menu">
+      <p v-for="item in Object.values(blogMenu)">
+        <router-link :to="item.url">
+          {{ item.title }}
+        </router-link>
+      </p>
+    </div>
     <div class="content">
       <h1 class="title">{{ blog.title }}</h1>
       <p>
@@ -26,16 +32,26 @@
   });
 </script>
 <style lang="scss" scoped>
+  a {
+    text-decoration: underline;
+  }
   .wrapper {
     display: flex;
-    padding-top: 50px;
+    padding-top: 20px;
     .menu {
-      width: 20%;
-      border: 1px solid red;
+      width: 18%;
+      p {
+        margin-bottom: 24px;
+        font-size: 16px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-break: keep-all;
+      }
     }
     .content {
-      width: 80%;
-      padding-left: 50px;
+      width: 82%;
+      padding-left: 80px;
       padding-bottom: 100px;
       :deep(a) {
         text-decoration: underline;
