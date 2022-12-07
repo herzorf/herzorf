@@ -26,6 +26,9 @@
     padding: 50px 50px 50px 100px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 576px) {
+      padding: 10px;
+    }
     .blogItem {
       display: flex;
       flex-direction: column;
