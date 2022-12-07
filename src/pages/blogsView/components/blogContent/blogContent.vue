@@ -40,6 +40,18 @@
     padding-top: 20px;
     .menu {
       width: 18%;
+      @media (max-width: 576px) {
+        padding-top: 25px;
+        padding-left: 25px;
+        position: fixed;
+        width: 70%;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        min-height: 100vh;
+        border: 1px solid red;
+        background-color: #fff;
+      }
       p {
         margin-bottom: 24px;
         font-size: 16px;
@@ -53,6 +65,10 @@
       width: 82%;
       padding-left: 80px;
       padding-bottom: 100px;
+      @media (max-width: 576px) {
+        padding: 0;
+        width: 100%;
+      }
       :deep(a) {
         text-decoration: underline;
       }
@@ -65,6 +81,13 @@
       }
       :deep(*) {
         margin: revert;
+      }
+    }
+    @media (max-width: 576px) {
+      padding: 0;
+      width: 100%;
+      h1 {
+        font-size: 28px;
       }
     }
   }
