@@ -75,10 +75,13 @@
       }
       .closeMenu {
         position: relative;
+        display: none;
         top: -60px;
-        display: inline;
         left: 70%;
         font-size: 40px;
+        @media (max-width: 576px) {
+          display: inline;
+        }
       }
     }
     .content {
@@ -109,12 +112,15 @@
       top: 50%;
       width: 50px;
       height: 50px;
+      display: none;
       font-size: 50px;
-      display: flex;
       justify-content: center;
       align-items: center;
       background: #fff;
       border-radius: 50%;
+      @media (max-width: 576px) {
+        display: flex;
+      }
     }
     @media (max-width: 576px) {
       padding: 0;
