@@ -48,7 +48,7 @@
         <span class="info">{{ "软件工程（本科）" }}</span>
       </div>
       <div class="workExperience">
-        <span class="title">{{ "2022/8 - 至今" }}</span>
+        <span class="title">{{ "2022/8 - 2022/12" }}</span>
         <h3>明略科技（上海）</h3>
         <span class="info">{{ "前端开发工程师" }}</span>
       </div>
@@ -319,7 +319,6 @@
       flex-wrap: wrap;
       .projectItem {
         width: 30%;
-        height: 400px;
         cursor: pointer;
         border: 1px solid gray;
         display: flex;
@@ -331,7 +330,7 @@
           margin-bottom: 30px;
         }
         img {
-          width: 80%;
+          width: 300px;
         }
 
         p {
