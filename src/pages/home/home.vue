@@ -91,7 +91,12 @@
       </div>
     </div>
   </section>
-  <footer>Copyright © 2022 Herzorf 版权所有 陕ICP备2022012657号</footer>
+  <footer>
+    Copyright © 2022 Herzorf 版权所有
+    <a href="https://beian.miit.gov.cn/#/Integrated/index"
+      >陕ICP备2022012657号</a
+    >
+  </footer>
 </template>
 
 <script setup lang="ts" name="home">
