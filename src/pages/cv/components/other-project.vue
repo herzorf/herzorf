@@ -27,6 +27,13 @@
         >
       </template>
     </OtherProjectItem>
+    <OtherProjectItem>
+      <template #name> go爬虫 </template>
+      <template #info> 爬取米柚社区cos专栏的图片 </template>
+      <template #link>
+        <a href="https://github.com/herzorf/Gun">源码链接 </a>
+      </template>
+    </OtherProjectItem>
   </section>
 </template>
 <script setup lang="ts">
