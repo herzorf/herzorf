@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div :class="`menu ${menuVisible && 'display'}`">
       <div class="closeMenu" @click="menuVisible = false">x</div>
-      <p v-for="item in Object.values(blogMenu)">
+      <p v-for="item in Object.values(blogMenu)" :key="item.title">
         <router-link @click="menuVisible = false" :to="item.url">
           {{ item.title }}
         </router-link>
